@@ -76,14 +76,14 @@ input[type="search"] {
   background-image: url('../img/icon-search.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background: transparent;
+  background-color: transparent;
   border: 0;
 }
 input[type="search"]:focus {
   width: 300px;
   transition: width 1s ease-out;
   background-position: right;
-  background: #998675;
+  background: #998675; 
 }
 .header-slader {
   display: flex;
@@ -759,4 +759,222 @@ input[type="search"]:focus {
 }
 .sponsor-link {
   
+}
+
+/*///Подвал сайта///*/
+/*************************************/
+.footer-top {
+    padding: 80px 0 80px 0;
+    background-color: #191919;
+}
+.footer-top-block {
+    display: flex;
+    justify-content: center;
+}
+/*первый блок*/
+.block-info {
+    width: 250px;
+    margin-right: 20px;
+}
+
+.block-info p {
+    font-family: "montserrat-light", "Arial", sans-serif;
+    color: #545454;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 30px 0 30px 0;
+}
+
+.link-block-info {
+    font-family: "montserrat-light", "Arial", sans-serif;
+    color: #d1d1d1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.link-block-info::after {
+    content: "";
+    position: absolute;
+    background: url(../img/arrow_white.png) no-repeat;
+    width: 5px;
+    height: 8px;
+    top: 3px;
+    right: -15px;
+}
+
+.link-block-info:hover {
+    color: #c7b299;
+}
+/*второй блок*/
+.recent-block {
+    width: 270px;
+    margin-right: 30px;
+}
+.recent-block h4 {
+    font-family: "raleway-bold", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.posts {
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #252525;
+}
+.posts:last-child {
+    border: none;
+}
+.recent-block span {
+    font-family: "montserrat-light", "Arial", sans-serif;
+    color: #363636;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+.recent-block p {
+    font-family: "raleway-bold", "Arial", sans-serif;
+    color: #545454;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+.posts:hover span {
+    color: #ffffff;
+}
+.posts:hover p {
+    color: #c7b299;
+}
+/*третий блок*/
+.our-twitter {
+    width: 270px;
+    margin-right: 30px;
+}
+.our-twitter h4 {
+    font-family: "raleway-bold", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.twitter-block {
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #252525;
+}
+.twitter-block p {
+    /*   padding-bottom: 0px;*/
+}
+.twitter {
+    color: #00bff3 !important;
+}
+.twitter-block p,
+.twitter-block span {
+    font-family: "raleway-bold", "Arial", sans-serif;
+    color: #545454;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+.twitter-block a {
+    color: #959595;
+}
+/*Четвертый блок*/
+.widget {
+    width: 300px;
+}
+.widget h4 {
+    font-family: "raleway-bold", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.widget-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+.widget-block img {
+    display: block;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+.widget-block img:nth-child(2) {
+    padding-right: 0;
+}
+.widget-block img:nth-child(3) {
+    padding-bottom: 0;
+}
+.widget-block img:last-child {
+    padding: 0;
+}
+.widget-block img:hover {
+    opacity: 0.5;
+}
+
+
+/* footer ******/
+.footer-bottom {
+    background-color: #111111;
+    padding: 50px 376px 50px 376px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+/* Text style for "Waxom" */
+    color: #959595;
+/* Text style for "|   ,    |" */
+    color: #252525;
+/* Text style for "FAQ" */
+    color: #c7b299;
+}
+/*блок слева*/
+.footer-bottom-left span,
+.footer-bottom-left a {
+    font-family: "montserrat-light", "Arial", sans-serif;
+    color: #555555;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+}
+/*
+.footer-bottom-left span {
+    padding-right: 10px;
+}
+*/
+.footer-bottom-left a {
+    border-left: 2px solid #252525;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.footer-bottom-left span span{
+    color: #959595;
+}
+.footer-bottom-left a:hover {
+    color: #c7b299;
+}
+/*блок справа*/
+.footer-bottom-right {
+    display: flex;
+    justify-content: center;
+}
+.footer-bottom-right span {
+    padding: 0px;    
+    font-family: "montserrat-light", "Arial", sans-serif;
+    color: #545454;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+     /*padding: 0 10px 0 10px;*/
+}
+.footer-bottom-right span:nth-child(2) {
+    border-left: 2px solid #555555;
+}
+.footer-bottom-right span {
+    color: #959595;
 }
